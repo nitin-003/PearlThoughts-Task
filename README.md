@@ -15,11 +15,23 @@
 
 ## API Endpoints
 
-* POST /email/send
-* --->  For send https://pearlthoughts-task-kyzb.onrender.com/email/send
-* --->  If already send then check on https://pearlthoughts-task-kyzb.onrender.com/email
+#### POST /email/send
+* Description: Sends an email using one of the providers.
+* Method: POST
+* Request Body: -->   {
+        "to": "recipient@example.com",
+        "subject": "Hello",
+        "message": "This is a test email.",
+        "idempotencyKey": "email-001"
+   }
+* How to test: Use Postman or any API client. This cannot be tested in browser because it requires a POST body.
  
-* GET /email/status  --->  https://pearlthoughts-task-kyzb.onrender.com/status?idempotencyKey=email-123
+#### GET /email/status
+* Description: Returns the current delivery status of the email associated with the given idempotency key.
+* Method: GET
+* Test in browser: ✅ Yes
+* Example:  --> https://pearlthoughts-task-kyzb.onrender.com/email/status?idempotencyKey=email-003
+
 
 # Assumptions
 

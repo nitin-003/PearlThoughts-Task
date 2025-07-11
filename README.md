@@ -22,7 +22,7 @@
         "to": "recipient@example.com",
         "subject": "Hello",
         "message": "This is a test email.",
-        "idempotencyKey": "email-001"
+        "idempotencyKey": "email-003"
    }
 * How to test: Use Postman or any API client. This cannot be tested in browser because it requires a POST body.
  

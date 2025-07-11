@@ -13,6 +13,12 @@
 
 * npm run dev
 
+## API Endpoints
+
+* POST /email/send
+
+* GET /email/status
+
 # Assumptions
 
 * Email providers are mocked (ProviderA, ProviderB) and fail randomly.

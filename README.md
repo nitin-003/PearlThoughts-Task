@@ -15,8 +15,10 @@
 
 ## API Endpoints
 
-* POST /email/send --->  https://pearlthoughts-task-kyzb.onrender.com/email/send
-
+* POST /email/send
+* --->  For send https://pearlthoughts-task-kyzb.onrender.com/email/send
+* --->  If already send then check on https://pearlthoughts-task-kyzb.onrender.com/email
+ 
 * GET /email/status  --->  https://pearlthoughts-task-kyzb.onrender.com/status?idempotencyKey=email-123
 
 # Assumptions
